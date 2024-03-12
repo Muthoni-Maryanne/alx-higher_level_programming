@@ -7,6 +7,7 @@ This is the beginning of Python. Concepts looked at include: the python interpre
 1. [The Python Tutorial](https://docs.python.org/3.4/tutorial/index.html)
 2. [Python's F-String for String Interpolation and Formatting](https://realpython.com/python-f-strings/)
 3. [Learn to Program](https://www.youtube.com/watch?v=nwjAHQERL08&list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt&index=1)
+4. [Pycodestyle](https://pypi.org/project/pycodestyle/)
 
 ## Summary
 
@@ -104,6 +105,21 @@ One way to remember how slices work is to think of the indices as pointing betwe
 ![slicing](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/4054aa62-9f33-4e85-9ebc-bc514fb6a3f6)
 
 The slice from i to j consists of all characters between the edges labeled i and j, respectively e.g [1:3] is y and t.
+
+#### Python's F-String for String Interpolation and Formatting
+a. 
+
+#### Pycodestyle
+```
+$ pip install pycodestyle
+$ pip install --upgrade pycodestyle
+$ pip uninstall pycodestyle
+```
+Example usage: ```$ pycodestyle --first optparse.py```
+
+Source code for each error: ```$ pycodestyle --show-source --show-pep8 testing/data/E40.py```
+
+Error occurrence: ```$ pycodestyle --statistics -qq Python-2.5/Lib```
 
 ## Tasks
 **Task 0:**  [0-run](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/0-run)
