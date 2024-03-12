@@ -1,6 +1,6 @@
 # 0x00. Python - Hello, World
 
-This is the beginning of python. Concepts looked at include:
+This is the beginning of Python. Concepts looked at include: the python interpreter, numbers, strings, indexing, slicing and string interpolation using %, .format and fstrings.
 
 ## Resources
 
