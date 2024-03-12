@@ -5,7 +5,8 @@ This is the beginning of python. Concepts looked at include:
 ## Resources
 
 1. [The Python Tutorial](https://docs.python.org/3.4/tutorial/index.html)
-2. 
+2. [Python's F-String for String Interpolation and Formatting](https://realpython.com/python-f-strings/)
+3. [Learn to Program](https://www.youtube.com/watch?v=nwjAHQERL08&list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt&index=1)
 
 ## Summary
 
