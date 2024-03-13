@@ -159,7 +159,49 @@ b. The str.format() Method
 ```
 
 c. F-strings
+```
+>>> name = "Jane"
+>>> age = 25
+>>> f"Hello, {name}! You're {age} years old."
+'Hello, Jane! You're 25 years old.'
 
+#embedding functions, list comprehensions with f strings.
+>>> f"Hello, {name.upper()}! You're {age} years old."
+"Hello, JANE! You're 25 years old."
+
+>>> f"{[2**n for n in range(3, 9)]}"
+'[8, 16, 32, 64, 128, 256]'
+
+#format specifiers
+>>> balance = 5425.9292
+>>> f"Balance: ${balance:.2f}"
+'Balance: $5425.93'
+
+>>> heading = "Centered string"
+>>> f"{heading:=^30}"
+'=======Centered string========'
+
+>>> integer = -1234567
+>>> f"Comma as thousand separators: {integer:,}"
+'Comma as thousand separators: -1,234,567'
+
+>>> sep = "_"
+>>> f"User's thousand separators: {integer:{sep}}"
+'User's thousand separators: -1_234_567'
+
+>>> floating_point = 1234567.9876
+>>> f"Comma as thousand separators and two decimals: {floating_point:,.2f}"
+'Comma as thousand separators and two decimals: 1,234,567.99'
+
+>>> date = (9, 6, 2023)
+>>> f"Date: {date[0]:02}-{date[1]:02}-{date[2]}"
+'Date: 09-06-2023'
+
+>>> from datetime import datetime
+>>> date = datetime(2023, 9, 26)
+>>> f"Date: {date:%m/%d/%Y}"
+'Date: 09/26/2023'
+```
 
 #### Pycodestyle
 ```
