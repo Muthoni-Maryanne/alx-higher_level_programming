@@ -82,7 +82,8 @@ Note: Does not work for variables or expressions. If you want to concatenate var
 >>> text
 'Put several strings within parentheses to have them joined together.'
 
->>>prefix + 'thon'
+>>> prefix = 'Py'
+>>> prefix + 'thon'
 'Python'
 ```
 #### Indexing and slicing
