@@ -106,8 +106,60 @@ One way to remember how slices work is to think of the indices as pointing betwe
 
 The slice from i to j consists of all characters between the edges labeled i and j, respectively e.g [1:3] is y and t.
 
-#### Python's F-String for String Interpolation and Formatting
-a. 
+#### String Interpolation and Formatting
+a. modulo operator
+```
+# one element
+>>> name = "Jane"
+>>> "Hello, %s!" % name
+'Hello, Jane!'
+
+# using a tuple
+>>> age = 25
+>>> "Hello, %s! You're %s years old." % (name, age)
+'Hello, Jane! You're 25 years old.'
+
+#using a dictionary
+"Hello, %(name)s! You're %(age)s years old." % {"name": "Jane", "age": 25}
+"Hello, Jane! You're 25 years old."
+
+# format specifiers
+>>> "Balance: $%.2f" % 5425.9292
+'Balance: $5425.93'
+>>> print("Name: %s\nAge: %5s" % ("John", 35))
+Name: John
+Age:    35
+```
+b. The str.format() Method
+```
+# empty brackets
+>>> name = "Jane"
+>>> age = 25
+>>> "Hello, {}! You're {} years old.".format(name, age)
+"Hello, Jane! You're 25 years old."
+
+# using zero-based indices to specify interpolation order
+>>> "Hello, {1}! You're {0} years old.".format(age, name)
+"Hello, Jane! You're 25 years old."
+
+#use keyword arguments in the call to the method and enclose the argument names in your replacement fields
+>>> "Hello, {name}! You're {age} years old.".format(name="Jane", age=25)
+"Hello, Jane! You're 25 years old."
+
+# use dictionaries then dictionary unpacking operator (**) to provide the arguments to .format().
+>>> person = {"name": "Jane", "age": 25}
+>>> "Hello, {name}! You're {age} years old.".format(**person)
+"Hello, Jane! You're 25 years old."
+
+# format specifiers
+>>> "Balance: ${:.2f}".format(5425.9292)
+'Balance: $5425.93'
+>>> "{:=^30}".format("Centered string")
+'=======Centered string========'
+```
+
+c. F-strings
+
 
 #### Pycodestyle
 ```
