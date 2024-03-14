@@ -269,12 +269,92 @@ You have to use [f-strings tips](https://realpython.com/python-f-strings/).
 ![3](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/e32dedad-bc05-47b0-b343-e53881b313d6)
 
 **Task 4:**  [4-print_float.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/4-print_float.py)
+
+Complete the source code in order to print the float stored in the variable number with a precision of 2 digits. Source code:
+```
+#!/usr/bin/python3
+number = 3.14159
+# YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
+```
+![4](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/fd9eac1d-aace-4bdf-be92-ea73e3d9e5b3)
+
 **Task 5:**  [5-print_string.p](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/5-print_string.py)
+
+Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+```
+#!/usr/bin/python3
+str = "Holberton School"
+# YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
+```
+![5](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/01df9544-2e46-48e2-94d3-a0806c73193a)
+
 **Task 6:**  [6-concat.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/6-concat.py)
+
+Complete this source code to print Welcome to Holberton School!
+```
+#!/usr/bin/python3
+str1 = "Holberton"
+str2 = "School"
+# YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
+print(f"Welcome to {str1}!")
+```
+![6](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/65e98c8b-eacd-4866-9163-8c5fb21b25c7)
+
 **Task 7:**  [7-edges.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/7-edges.py)
+Complete this source code
+```
+#!/usr/bin/python3
+word = "Holberton"
+# YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
+print(f"First 3 letters: {word_first_3}")
+print(f"Last 2 letters: {word_last_2}")
+print(f"Middle word: {middle_word}")
+```
+![7](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/2a4f78c6-da8c-46ef-bf7e-f8e2cd03237b)
+
 **Task 8:**  [8-concat_edges.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/8-concat_edges.py)
+
+Complete this source code to print object-oriented programming with Python, followed by a new line.
+```
+#!/usr/bin/python3
+str = "Python is an interpreted, interactive, object-oriented programming\
+ language that combines remarkable power with very clear syntax"
+# YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
+print(str)
+```
+![8](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/9e81574e-1cc3-4209-bbc0-a4818363cdfb)
+
 **Task 9:**  [9-easter_egg.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/9-easter_egg.py)
+
+Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
+
+![9](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/76099d0f-8c63-4933-aa9d-55b2f3a4dce1)
+
 **Task 10:**  []()
+
+Write a function in C that checks if a singly linked list has a cycle in it.
+
+Prototype: int check_cycle(listint_t *list);
+
+Return: 0 if there is no cycle, 1 if there is a cycle
+
+![10](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/12f99468-4229-41fe-900b-ffa3029a1fe2)
+
 **Task 11:**  [100-write.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/100-write.py)
+
+Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line. Use the function write from the sys module.
+
+![11](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/5ebc7d21-d6d2-4daf-a2d2-cda0c81658a4)
+
 **Task 12:**  [101-compile](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/101-compile)
+
+Write a script that compiles a Python script file. The Python file name will be stored in the environment variable $PYFILE
+The output filename has to be $PYFILEc (ex: export PYFILE=my_main.py => output filename: my_main.pyc)
+
+![12](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/80ec56b9-b2f8-4d1b-9f68-d82e83bf266b)
+
 **Task 13:**  [102-magic_calculation.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/102-magic_calculation.py)
+
+Write the Python function def magic_calculation(a, b):
+
+![13](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/30cf84fd-199f-4adf-a538-ce2c829c056e)
