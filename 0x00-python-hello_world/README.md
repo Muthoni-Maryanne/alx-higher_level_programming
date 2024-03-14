@@ -204,6 +204,21 @@ c. F-strings
 'Date: 09/26/2023'
 ```
 
+#### Python's Format Mini-Language for Tidy Strings
+BNF notation syntax for format specifiers for fstrings and str.format objects:
+```
+format_spec     ::=  [[fill]align][sign]["z"]["#"]["0"][width]
+                     [grouping_option]["." precision][type]
+fill            ::=  <any character>
+align           ::=  "<" | ">" | "=" | "^"
+sign            ::=  "+" | "-" | " "
+width           ::=  digit+
+grouping_option ::=  "_" | ","
+precision       ::=  digit+
+type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" |
+                     "G" | "n" | "o" | "s" | "x" | "X" | "%"
+```
+
 #### Pycodestyle
 ```
 $ pip install pycodestyle
@@ -238,7 +253,7 @@ Use print.
 
 ![2](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/e5914c6e-b786-4131-9ef1-40d69b0c014f)
 
-**Task 3:**  []()
+**Task 3:**  [3-print_number.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/3-print_number.py)
 Complete this source code:
 ```
 #!/usr/bin/python3
@@ -253,3 +268,13 @@ You have to use [f-strings tips](https://realpython.com/python-f-strings/).
 
 ![3](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/e32dedad-bc05-47b0-b343-e53881b313d6)
 
+**Task 4:**  [4-print_float.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/4-print_float.py)
+**Task 5:**  [5-print_string.p](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/5-print_string.py)
+**Task 6:**  [6-concat.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/6-concat.py)
+**Task 7:**  [7-edges.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/7-edges.py)
+**Task 8:**  [8-concat_edges.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/8-concat_edges.py)
+**Task 9:**  [9-easter_egg.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/9-easter_egg.py)
+**Task 10:**  []()
+**Task 11:**  [100-write.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/100-write.py)
+**Task 12:**  [101-compile](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/101-compile)
+**Task 13:**  [102-magic_calculation.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x00-python-hello_world/102-magic_calculation.py)
