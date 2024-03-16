@@ -24,6 +24,7 @@ else:
     print('More')
 ```
 b. for statement 
+
 In python, for is for iterating over the items of any sequence (a list or a string), in the order that they appear in the sequence.
 ```
 words = ['cat', 'window', 'defenestrate']
@@ -31,7 +32,8 @@ for w in words:
     print(w, len(w))
 ```
 c. range()
-use it with for to generate arithmetic progressions. Also can iterate over sequences.
+
+Use it with for to generate arithmetic progressions. Also can iterate over sequences.
 ```
 >>> list(range(5, 10))
 [5, 6, 7, 8, 9]
@@ -52,7 +54,8 @@ use it with for to generate arithmetic progressions. Also can iterate over seque
 4 lamb
 ```
 d. break and continue statements.
-break breaks out of the innermost enclosing for or while loop while continue continues with the next iteration of the loop.
+
+Break breaks out of the innermost enclosing for or while loop while continue continues with the next iteration of the loop.
 ```
 for n in range(2, 10):
     for x in range(2, n):
@@ -71,6 +74,7 @@ for num in range(2, 10):
     print("Found an odd number", num)
 ```
 e. pass
+
 Does nothing, used when a statement is required syntactically but the program requires no action.
 ```
 while True:
@@ -84,6 +88,7 @@ def initlog(*args):
 ```
 
 f. match
+
 Similar to switch in C, takes an expression and compares its value to successive patterns given as one or more case blocks.
 ```
 def http_error(status):
