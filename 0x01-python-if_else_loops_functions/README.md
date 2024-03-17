@@ -117,7 +117,7 @@ g. Functions
 >>> f100
 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 ```
-h. Defining functions
+#### Defining functions
 
 1. Default argument values
 
@@ -210,7 +210,7 @@ kwd_only_arg(arg = 3)
 combined_example(1, standard = 2, kwd_only = 3)
 combined_example(1, 2, kwd_only = 3)
 ```
-**NOTE**
+**NOTE:**
 
 keyword  arguments: argument preceded by an identifier e.g 'name =' or passed as a value in a dictionary preceded by **
 
