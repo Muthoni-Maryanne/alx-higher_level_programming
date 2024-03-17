@@ -117,7 +117,113 @@ g. Functions
 >>> f100
 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 ```
+h. Defining functions
 
+1. Default argument values
+
+Not all arguments need to be used when calling function, just the default standard one that can be positional or keyword. Example using positional arguments to call:
+```
+def ask_ok(prompt, retries=4, reminder='Please try again!'):
+    while True:
+        reply = input(prompt)
+        if reply in {'y', 'ye', 'yes'}:
+            return True
+        if reply in {'n', 'no', 'nop', 'nope'}:
+            return False
+        retries = retries - 1
+        if retries < 0:
+            raise ValueError('invalid user response')
+        print(reminder)
+```
+can call this function:
+giving only the mandatory argument: ask_ok('Do you really want to quit?')
+
+giving one of the optional arguments: ask_ok('OK to overwrite the file?', 2)
+
+or even giving all arguments: ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')
+
+2. Keyword arguments
+
+Functions can also be called using keyword arguments of the form kwarg=value e.g
+```
+def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
+    print("-- This parrot wouldn't", action, end=' ')
+    print("if you put", voltage, "volts through it.")
+    print("-- Lovely plumage, the", type)
+    print("-- It's", state, "!")
+```
+Function can be called in any of these ways:
+```
+parrot(1000)                                          # 1 positional argument
+parrot(voltage=1000)                                  # 1 keyword argument
+parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments
+parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments
+parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments
+parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
+```
+when you have *name and **name in parameters, *name is a tuple type of positional argument and **name is a dictionary type of keyword argument. Example of definition and call:
+```
+def cheeseshop(kind, *arguments, **keywords):
+    print("-- Do you have any", kind, "?")
+    print("-- I'm sorry, we're all out of", kind)
+    for arg in arguments:
+        print(arg)
+    print("-" * 40)
+    for kw in keywords:
+        print(kw, ":", keywords[kw])
+
+cheeseshop("Limburger", "It's very runny, sir.",
+           "It's really very, VERY runny, sir.",
+           shopkeeper="Michael Palin",
+           client="John Cleese",
+           sketch="Cheese Shop Sketch")
+```
+3. Special parameters
+   
+Restrict way arguments are passed for readability and efficiency. Syntax:
+```
+def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
+```
+![special](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/ba7bd70d-2537-48a8-8b99-f79975ee8d6d)
+
+How to define and call:
+```
+def standard_arg(arg):
+    print(arg)
+
+def pos_only_arg(arg, /):
+    print(arg)
+
+def kwd_only_arg(*, arg):
+    print(arg)
+
+def combined_example(pos_only, /, standard, *, kwd_only):
+    print(pos_only, standard, kwd_only)
+
+standard_arg(arg = 2)
+standard_arg(2)
+
+pos_only_arg(1)
+
+kwd_only_arg(arg = 3)
+
+combined_example(1, standard = 2, kwd_only = 3)
+combined_example(1, 2, kwd_only = 3)
+```
+**NOTE**
+
+keyword  arguments: argument preceded by an identifier e.g 'name =' or passed as a value in a dictionary preceded by **
+
+positional arguments: appear at beginning of an argument list or be passed by elements of an iterable preceded by *
+```
+#keyword
+complex(real = 3, imag = 5)
+complex(**('real' : 3, 'imag' : 5)
+
+#positional
+complex(3,5)
+complex(*(3,5)
+```
 ## Tasks
 **Task 0:**  [0-positive_or_negative.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x01-python-if_else_loops_functions/0-positive_or_negative.py)
 
