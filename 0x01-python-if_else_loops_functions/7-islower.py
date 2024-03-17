@@ -2,7 +2,7 @@
 def islower(c):
     '''function that checks for lowercase character'''
     new = ord(c)
-    if new >= 97 and new <= 122:
+    if new > 96 and new < 123:
         True
     else:
         False
