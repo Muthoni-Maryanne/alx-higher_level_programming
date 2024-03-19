@@ -12,7 +12,5 @@ def add_tuple(tuple_a=(), tuple_b=()):
         else:
             tuple_b = tuple_b[0], 0
 
-    list = []
-    for i in range(len(tuple_a)):
-        list.append(tuple_a[i] + tuple_b[i])
-    return tuple(list)
+    result_tuple = tuple(x + y for x, y in zip(tuple_a, tuple_b))
+    return result_tuple
