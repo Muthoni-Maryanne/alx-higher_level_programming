@@ -71,21 +71,50 @@ True
 ```
 List methods: list.append(x), list.extend(iterable), list.insert(i, x), list.remove(x), list.pop([i]), list.clear(), list.index(x[, start[, end]]), list.count(x), list.sort(*, key=None, reverse=False), list.reverse() and list.copy(). Example:
 ```
->>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
->>> fruits.count('apple')
-2
->>> fruits.index('banana', 4)  # Find next banana starting at position 4
-6
->>> fruits.reverse()
+# list.extend(iterable)- Extend the list by appending all the items from the iterable
+>>> fruits = ['orange', 'apple', 'pear']
+>>> fruits2 = ['banana', 'kiwi', 'apple', 'banana']
+>>> fruits.extend(fruits2)  # alt: fruits.extend(['banana', 'kiwi', 'apple', 'banana'])
 >>> fruits
-['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']
+['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
+
+# list.append(x)- Add an item to the end of the list
 >>> fruits.append('grape')
 >>> fruits
-['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']
+['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana', 'grape']
+
+# list.insert(i, x)- Insert an item at a given position
+>>> fruits.insert(0, 'cherry')
+>>> fruits
+['cherry','orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana', 'grape']
+
+# list.remove(x)- Remove the first item from the list whose value is equal to x
+>>> fruits.remove('cherry')
+>>> fruits
+['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana', 'grape']
+
+# list.count(x)- Return the number of times x appears in the list.
+>>> fruits.count('apple')
+2
+
+# list.index(x[, start[, end]])- Return zero-based index in the list of the first item whose value is equal to x
+>>> fruits.index('banana', 4)  # Find next banana starting at position 4
+6
+
+# list.reverse()- Reverse the elements of the list in place
+>>> fruits.reverse()
+>>> fruits
+['grape', 'banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']
+
+# list.sort(*, key=None, reverse=False)- Sort the items of the list in place
 >>> fruits.sort()
 >>> fruits
 ['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']
+
+# list.pop([i])- Remove the item at the given position in the list, and return it
 >>> fruits.pop()
 'pear'
 ```
+
+Lists as stacks
 
