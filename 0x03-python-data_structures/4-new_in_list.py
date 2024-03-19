@@ -4,7 +4,7 @@ def new_in_list(my_list, idx, element):
 
     without modifying the original list'''
     if idx < 0 or idx > (len(my_list) - 1):
-        return my_listi.copy()
+        return my_list
     else:
         list = []
         for number in my_list:
