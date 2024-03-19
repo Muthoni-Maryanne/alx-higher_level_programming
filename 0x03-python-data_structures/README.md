@@ -287,13 +287,41 @@ Creating an empty tuple and one with a single element:
 ![5](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/d738d0f4-814c-47db-b330-b4d406658d14)
 
 **Task 6:**[6-print_matrix_integer.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/6-print_matrix_integer.py) - Write a function that prints a matrix of integers.
-![6](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/930105e4-4c37-4726-9d1f-9f058612428e)
 
 ![6](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/ee4699b0-1238-4b7a-af18-ae1761b8dc63)
 
 **Task 7:**[7-add_tuple.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/7-add_tuple.py)- Function that adds 2 tuples.
 
 ![7](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/49d00d09-0a8c-42cc-8499-a4594561f849)
+
+**Task 8:** [8-multiple_returns.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/8-multiple_returns.py) - Write a function that returns a tuple with the length of a string and its first character.
+
+![8](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/4720ad3d-ceb4-4e0e-b3df-4bd5ee21ea0c)
+
+**Task 9:** [9-max_integer.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/9-max_integer.py) - Write a function that finds the biggest integer of a list.
+
+![9](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/52820945-8baf-4fdc-9d88-f4a68f7f5482)
+
+**Task 10:** [10-divisible_by_2.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/10-divisible_by_2.py) - Write a function that finds all multiples of 2 in a list.
+
+![10](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/9e2530c1-4208-4568-9644-e35acbf159a8)
+
+**Task 11:** [11-delete_at.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/11-delete_at.py) - Write a function that deletes the item at a specific position in a list.
+
+![11](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/1a45623b-c116-4cc5-9a34-d47c02a1c23b)
+
+**Task 12:** [12-switch.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/12-switch.py) - Complete the source code in order to switch value of a and b
+```
+#!/usr/bin/python3
+a = 89
+b = 10
+# YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
+print("a={:d} - b={:d}".format(a, b))
+```
+![12](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/9ada216d-6f0e-4287-be01-9aad119b6ab4)
+
+**Task 13:** []()
+**Task 14:** []()
 
 
    
