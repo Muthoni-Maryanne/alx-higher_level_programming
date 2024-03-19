@@ -24,7 +24,7 @@ Mutable collection of data of the same or different type in square braces separa
 >>> x[0][1]
 'b'
 ```
-operations that can be done on lists:
+**operations that can be done on lists:**
 ```
 # indexing
 >>> squares[-1]
@@ -69,7 +69,7 @@ True
 >>> rgb
 ["Red", "Green", "Blue", "Alph"]
 ```
-List methods: list.append(x), list.extend(iterable), list.insert(i, x), list.remove(x), list.pop([i]), list.clear(), list.index(x[, start[, end]]), list.count(x), list.sort(*, key=None, reverse=False), list.reverse() and list.copy(). Example:
+**List methods:** list.append(x), list.extend(iterable), list.insert(i, x), list.remove(x), list.pop([i]), list.clear(), list.index(x[, start[, end]]), list.count(x), list.sort(*, key=None, reverse=False), list.reverse() and list.copy(). Example:
 ```
 # list.extend(iterable)- Extend the list by appending all the items from the iterable
 >>> fruits = ['orange', 'apple', 'pear']
@@ -111,10 +111,98 @@ List methods: list.append(x), list.extend(iterable), list.insert(i, x), list.rem
 >>> fruits
 ['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']
 
-# list.pop([i])- Remove the item at the given position in the list, and return it
+# list.pop([i])- Remove the item at the given position in the list, and return it. If no position specified removes last item.
 >>> fruits.pop()
 'pear'
 ```
+**Lists as stacks**: A stack is a data structure that follows the Last In, First Out (LIFO) principle. It's named "stack" because it resembles a stack of items, where you can only add or remove items from the top. list methods make it very easy to use a list as a stack, where the last element added is the first element retrieved (“last-in, first-out”). To add an item to the top of the stack, use append(). To retrieve an item from the top of the stack, use pop()
+```
+>>> stack = [3, 4, 5]
+>>> stack.append(6)
+>>> stack
+[3, 4, 5, 6]
+>>> stack.pop()
+6
+>>> stack
+[3, 4, 5]
+```
+**Lists as queues**:  a queue is a linear data structure that follows the First In, First Out (FIFO) principle. It's named "queue" because it resembles a line of people waiting for a service, where the first person to join the line is the first one to be served. This works in lists through insert and pop at the beginning of the list but it's slow and lists are inefficient for this. To implement a queue, use collections.deque which was designed to have fast appends and pops from both ends
+```
+>>> from collections import deque
+>>> queue = deque(["Eric", "John", "Michael"])
+>>> queue.append("Terry")           # Terry arrives
+>>> queue.append("Graham")          # Graham arrives
+>>> queue.popleft()                 # The first to arrive now leaves
+'Eric'
+>>> queue.popleft()                 # The second to arrive now leaves
+'John'
+>>> queue                           # Remaining queue in order of arrival
+deque(['Michael', 'Terry', 'Graham'])
+```
+**List comprehensions**: provide a concise way to create lists. A list comprehension consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses. The result will be a new list resulting from evaluating the expression in the context of the for and if clauses that follow it.
+```
+```
+**del statement:** Removes items from a list using index, can remove slices, clear entire list and entire variables
+```
+>>> a = [-1, 1, 66.25, 333, 333, 1234.5]
+>>> del a[0]
+>>> a
+[1, 66.25, 333, 333, 1234.5]
+>>> del a[2:4]
+>>> a
+[1, 66.25, 1234.5]
+>>> del a[:]
+>>> a
+[]
+>>> del a
+```
+#### B. Tuples and sequences
+Immutable collection of values separated by commas that can be in parentheses. Elements are accessed through unpacking or indexing.
+```
+# tuple packing - values packed together in a tuple
+>>> t = 12345, 54321, 'hello!'
+>>> t[0] #indexing
+12345
+>>> t
+(12345, 54321, 'hello!')
 
-Lists as stacks
+# Tuples may be nested:
+>>> u = t, (1, 2, 3, 4, 5)
+>>> u
+((12345, 54321, 'hello!'), (1, 2, 3, 4, 5))
+
+# Tuples are immutable:
+>>> t[0] = 88888
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+
+# Immutable but they can contain mutable objects:
+>>> v = ([1, 2, 3], [3, 2, 1])
+>>> v
+([1, 2, 3], [3, 2, 1])
+
+# tuple unpacking
+>>> t = (12345, 54321, 'hello!')  # Tuple with three elements
+>>> x, y, z = t  # Sequence unpacking: Assigns 12345 to x, 54321 to y, and 'hello' to z
+>>> print(x)
+12345
+>>> print(y)
+54321
+>>> print(z)
+hello!
+
+```
+Creating an empty tuple and one with a single element
+```
+>>> empty = () # Empty tuples are constructed by an empty pair of parentheses
+>>> singleton = 'hello',    # a tuple with one item is constructed by following a value with a comma
+>>> len(empty)
+0
+>>> len(singleton)
+1
+>>> singleton
+('hello',)
+```
+   
 
