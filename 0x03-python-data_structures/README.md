@@ -139,9 +139,66 @@ True
 >>> queue                           # Remaining queue in order of arrival
 deque(['Michael', 'Terry', 'Graham'])
 ```
-**List comprehensions**: provide a concise way to create lists. A list comprehension consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses. The result will be a new list resulting from evaluating the expression in the context of the for and if clauses that follow it.
+**List comprehensions:** provide a concise way to create lists. A list comprehension consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses. The result will be a new list from evaluating the expression in the context of the for and if clauses that follow it.
 ```
+>>> vec = [-4, -2, 0, 2, 4]
+>>> # create a new list with the values doubled
+>>> [x*2 for x in vec]
+[-8, -4, 0, 4, 8]
+>>> # filter the list to exclude negative numbers
+>>> [x for x in vec if x >= 0]
+[0, 2, 4]
+>>> # apply a function to all the elements
+>>> [abs(x) for x in vec]
+[4, 2, 0, 2, 4]
+>>> # call a method on each element
+>>> freshfruit = ['  banana', '  loganberry ', 'passion fruit  ']
+>>> [weapon.strip() for weapon in freshfruit]
+['banana', 'loganberry', 'passion fruit']
+>>> # create a list of 2-tuples like (number, square)
+>>> [(x, x**2) for x in range(6)]
+[(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
+>>> # the tuple must be parenthesized, otherwise an error is raised
+>>> [x, x**2 for x in range(6)]
+  File "<stdin>", line 1
+    [x, x**2 for x in range(6)]
+     ^^^^^^^
+SyntaxError: did you forget parentheses around the comprehension target?
+>>> # flatten a list using a listcomp with two 'for'
+>>> vec = [[1,2,3], [4,5,6], [7,8,9]]
+>>> [num for elem in vec for num in elem]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
+**Nested list comprehensions:** The initial expression in a list comprehension can be any arbitrary expression, including another list comprehension.
+```
+# transpose matrix 
+>>> matrix = [
+       [1, 2, 3, 4],
+       [5, 6, 7, 8],
+       [9, 10, 11, 12],
+    ]
+
+# list comprehension
+>>> [[row[i] for row in matrix] for i in range(4)]
+[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+
+# long method
+>>> transposed = []
+>>> for i in range(4):
+       # the following 3 lines implement the nested listcomp
+       transposed_row = []
+       for row in matrix:
+           transposed_row.append(row[i])
+       transposed.append(transposed_row)
+
+>>> transposed
+[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+
+#  built-in functions instead of complex flow statements
+list(zip(*matrix))
+[(1, 5, 9), (2, 6, 10), (3, 7, 11), (4, 8, 12)]
+```
+
 **del statement:** Removes items from a list using index, can remove slices, clear entire list and entire variables
 ```
 >>> a = [-1, 1, 66.25, 333, 333, 1234.5]
@@ -193,7 +250,7 @@ TypeError: 'tuple' object does not support item assignment
 hello!
 
 ```
-Creating an empty tuple and one with a single element
+Creating an empty tuple and one with a single element:
 ```
 >>> empty = () # Empty tuples are constructed by an empty pair of parentheses
 >>> singleton = 'hello',    # a tuple with one item is constructed by following a value with a comma
