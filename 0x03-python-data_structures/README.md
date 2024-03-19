@@ -261,5 +261,35 @@ Creating an empty tuple and one with a single element:
 >>> singleton
 ('hello',)
 ```
+## Tasks
+**Task  0:** [0-print_list_integer.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/0-print_list_integer.py) - Write a function that prints all integers of a list.
+
+![0](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/c30d8330-05fc-495a-a1e6-6fe7e7c54688)
+
+**Task 1:** [1-element_at.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/1-element_at.py) - Write a function that retrieves an element from a list like in C.
+
+![1](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/12c954c7-d716-42fd-8ce3-caf953c4c93b)
+
+**Task 2:**[2-replace_in_list.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/2-replace_in_list.py)- Write a function that replaces an element of a list at a specific position (like in C).
+
+![2](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/05f2650a-a458-4868-bca1-2cc980098908)
+
+**Task 3:**[3-print_reversed_list_integer.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/3-print_reversed_list_integer.py) - Write a function that prints all integers of a list, in reverse order.
+
+![3](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/f1829284-8f84-4883-a109-9083d2aea457)
+
+**Task 4:**[4-new_in_list.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/4-new_in_list.py) - Write a function that replaces an element in a list at a specific position without modifying the original list.
+
+![4](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/8689de71-0f34-43d2-b9cb-962e9bdf7b25)
+
+**Task 5:**[5-no_c.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x03-python-data_structures/5-no_c.py) - Write a function that removes all characters c and C from a string.
+
+![5](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/d738d0f4-814c-47db-b330-b4d406658d14)
+
+**Task 6:**[]() - Write a function that prints a matrix of integers.
+![6](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/930105e4-4c37-4726-9d1f-9f058612428e)
+
+**Task 7:**[]()
+
    
 
