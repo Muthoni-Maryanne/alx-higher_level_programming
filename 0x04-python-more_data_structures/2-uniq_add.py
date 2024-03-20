@@ -8,4 +8,4 @@ def uniq_add(my_list=[]):
         if type(value) != int:
             continue
         total += value
-    return total
+    return (total)
