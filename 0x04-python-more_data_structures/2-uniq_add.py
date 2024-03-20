@@ -6,6 +6,6 @@ def uniq_add(my_list=[]):
     total = 0
     for value in sorted(set(my_list)):
         if type(value) != int:
-            break
+            continue
         total += value
     return total
