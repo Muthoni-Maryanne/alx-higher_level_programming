@@ -1,7 +1,7 @@
 # 0x04. Python - More Data Structures: Set, Dictionary
 Continuation of python which looks at sets, dictionaries, looping through sequences, conditions, comparing sequences with other types, lambda, map, filter and reduce.
 # Resources
-1.[Data structures](https://docs.python.org/3/tutorial/datastructures.html)
+1. [Data structures](https://docs.python.org/3/tutorial/datastructures.html)
 2. [Lambda Operator, filter, reduce and map](https://python-course.eu/advanced-python/lambda-filter-reduce-map.php)
 3. [Learn to Program 12 Lambda Map Filter Reduce](https://www.youtube.com/watch?v=1GAC6KQUPeg)
 # Summary
@@ -137,6 +137,6 @@ banana
 orange
 pear
 ```
-** Note: ** It is sometimes tempting to change a list while you are looping over it; however, it is often simpler and safer to create a new list instead.
+**Note:** It is sometimes tempting to change a list while you are looping over it; however, it is often simpler and safer to create a new list instead.
 
 # Tasks
