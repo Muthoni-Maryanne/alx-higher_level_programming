@@ -4,7 +4,7 @@ def uniq_add(my_list=[]):
 
     (only once for each integer)'''
     total = 0
-    for value in sorted(set(my_list)):
+    for value in set(my_list):
         if type(value) != int:
             continue
         total += value
