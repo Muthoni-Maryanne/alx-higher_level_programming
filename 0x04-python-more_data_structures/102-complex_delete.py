@@ -10,8 +10,7 @@ def complex_delete(a_dictionary, value):
     for k, v in a_dictionary.items():
         if v is value:
             new_list.append(k)
-    
-    for key in new_list:
-        del a_dictionary[key]
-        
-    return new_dict
+            for key in new_list:
+                del a_dictionary[key]
+            new_dict[k] = v
+        return new_dict
