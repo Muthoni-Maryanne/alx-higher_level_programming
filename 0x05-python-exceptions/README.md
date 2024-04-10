@@ -196,3 +196,9 @@ Add some more information
 ```
 
 ## Tasks
+
+**Task 1:** [1-safe_print_integer.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x05-python-exceptions/1-safe_print_integer.py)
+
+Write a function that prints an integer with "{:d}".format()
+
+![1](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/4953da62-0a3b-432b-84bb-3fb242e48db2)
