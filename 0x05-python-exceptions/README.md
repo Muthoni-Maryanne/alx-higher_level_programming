@@ -202,3 +202,10 @@ Add some more information
 Write a function that prints an integer with "{:d}".format()
 
 ![1](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/4953da62-0a3b-432b-84bb-3fb242e48db2)
+
+**Task 3:** [3-safe_print_division.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x05-python-exceptions/3-safe_print_division.py)
+
+Write a function that divides 2 integers and prints the result.
+
+![3](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/7199977d-583b-4d8b-ba6a-77c90829d16d)
+
