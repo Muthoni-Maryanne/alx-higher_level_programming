@@ -160,5 +160,39 @@ with open("myfile.txt") as f:
 The with statement allows objects like files to be used in a way that ensures they are always cleaned up promptly and correctly. After the statement is executed, the file f is always closed, even if a problem was encountered while processing the lines. Objects which, like files, provide predefined clean-up actions will indicate this in their documentation.
 
 **Raising and Handling Multiple Unrelated Exceptions**
+```
+# Define an ExceptionGroup class
+class ExceptionGroup(Exception):
+    def __init__(self, message, exceptions):
+        super().__init__(message)
+        self.exceptions = exceptions
+
+# Define a function that raises an ExceptionGroup
+def f():
+    excs = [OSError('error 1'), SystemError('error 2')]
+    raise ExceptionGroup('There were problems', excs)
+
+try:
+    f()
+except Exception as e:
+    print(f'Caught {type(e)}: {e}')
+```
+**Enriching Exceptions with Notes**
+cases where it is useful to add information after the exception was caught. For this purpose, exceptions have a method add_note(note) that accepts a string and adds it to the exception’s notes list e.g
+```
+>>> try:
+        raise TypeError('bad type')
+    except Exception as e:
+        e.add_note('Add some information')
+        e.add_note('Add some more information')
+        raise
+
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+TypeError: bad type
+Add some information
+Add some more information
+>>>
+```
 
 ## Tasks
