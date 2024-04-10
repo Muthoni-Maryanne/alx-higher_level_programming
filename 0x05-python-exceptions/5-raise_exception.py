@@ -1,4 +1,5 @@
 def raise_exception():
     '''raises a type exception'''
     try:
-        raise TypeError
+        x = 1/'1'
+
