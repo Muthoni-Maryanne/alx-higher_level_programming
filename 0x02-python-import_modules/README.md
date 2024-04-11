@@ -27,7 +27,8 @@ def fib2(n):   # return Fibonacci series up to n
     return result
 ```
 Import the module ```import fibo```
-This does not add the names of the functions defined in fibo directly to the current namespace (see Python Scopes and Namespaces for more details); it only adds the module name fibo there. To access the functions:
+
+This does not add the names of the functions defined in fibo directly to the current namespace- where variables are stored(could be local, global, and built-in- it only adds the module name fibo there. To access the functions:
 ```
 >>> fibo.fib(1000)
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
@@ -41,7 +42,9 @@ This does not add the names of the functions defined in fibo directly to the cur
 >>> fib(500)
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
 ```
-Modules can import other modules. place all import statements at the beginning of a module (or script). There is a variant of the import statement that imports names from a module directly into the importing module’s namespace. For example:
+Modules can import other modules, place all import statements at the beginning of a module (or script). 
+
+There is a variant of the import statement that imports names from a module directly into the importing module’s namespace. For example:
 ```
 >>> from fibo import fib, fib2
 >>> fib(500)
@@ -59,13 +62,19 @@ If the module name is followed by as, then the name following as is bound direct
 >>> fibonacci(500)
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
 ```
-Modules can be executed as scripts with ```python fibo.py <arguments>```. Code in the module will be executed, just as if you imported it, but with the __name__ set to "__main__".
+Modules can be executed as scripts with ```python fibo.py <arguments>```. Code in the module will be executed, just as if you imported it, but with the __name__ set to "__main__". One just needs to add this code at the end of fibo.py:
+```
+if __name__ == "__main__":
+    import sys
+    fib(int(sys.argv[1]))
+```
+then run:
 ```
 $ python fibo.py 50
 0 1 1 2 3 5 8 13 21 34
 ```
 
- “Compiled” Python files: To speed up loading modules, Python caches the compiled version of each module in the __pycache__ directory under the name module.version.pyc e.g __pycache__/spam.cpython-33.pyc. The module compileall can create .pyc files for all modules in a directory.
+**“Compiled” Python files:** To speed up loading modules, Python caches the compiled version of each module in the __pycache__ directory under the name module.version.pyc e.g __pycache__/spam.cpython-33.pyc. The module compileall can create .pyc files for all modules in a directory.
 
 #### Standard modules
 Some modules are built into the interpreter either for efficiency or to provide access to operating system primitives such as system calls. Example: sys
