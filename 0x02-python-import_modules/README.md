@@ -133,47 +133,47 @@ this loads the submodule echo, but this makes its function echofilter() directly
 
 ## Tasks
 
-**Task 0:**[0-add.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/0-add.py)
+**Task 0:**   [0-add.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/0-add.py)
 
 Program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
 ![0](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/b063acc5-7496-464e-ac2f-13d58e45f5c1)
 
-**Task 1:**[1-calculation.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/1-calculation.py)
+**Task 1:**   [1-calculation.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/1-calculation.py)
 
 Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
 ![1](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/c6ffe70f-0bf8-4096-aa4e-9fcc53fa9a13)
 
-**Task 2:**[2-args.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/2-args.py)
+**Task 2:**   [2-args.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/2-args.py)
 
 Write a program that prints the number of and the list of its arguments.
 ![2](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/7ce93277-04ae-478c-b0e7-af5dc14a8394)
 
-**Task 3:**[3-infinite_add.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/3-infinite_add.py)
+**Task 3:**   [3-infinite_add.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/3-infinite_add.py)
 
 Write a program that prints the result of the addition of all arguments
 ![3](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/f7f7b874-befa-4b00-93e2-46d5cb7df731)
 
-**Task 4:**[4-hidden_discovery.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/4-hidden_discovery.py)
+**Task 4:**   [4-hidden_discovery.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/4-hidden_discovery.py)
 
 Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).
 ![4](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/f584e1bd-eb28-44f7-bbfe-e3604a0c691b)
 
-**Task 5:**[5-variable_load.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/5-variable_load.py)
+**Task 5:**   [5-variable_load.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/5-variable_load.py)
 
 Write a program that imports the variable a from the file variable_load_5.py and prints its value.
 ![5](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/26e2720c-a56d-4a0b-9dd7-32f4ca6a6cf0)
 
-**Task 6:**[100-my_calculator.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/100-my_calculator.py)
+**Task 6:**   [100-my_calculator.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/100-my_calculator.py)
 
 Write a program that imports all functions from the file calculator_1.py and handles basic operations.
 ![6](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/a213a256-f909-4411-a8d8-14cbf794e323)
 
-**Task 7:**[101-easy_print.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/101-easy_print.py)
+**Task 7:**   [101-easy_print.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/101-easy_print.py)
 
 Write a program that prints #pythoniscool, followed by a new line, in the standard output.
 ![7](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/fdef8897-8492-449f-a7e5-e04ec42745ef)
 
-**Task 8:**[]()
+**Task 8:**   []()
 
 Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
 ```
@@ -226,4 +226,10 @@ Write the Python function def magic_calculation(a, b): that does exactly the sam
             110 RETURN_VALUE
 ```
 Resource- [Python bytecode](https://docs.python.org/3.4/library/dis.html)
-**Task 9:**[]()
+
+**Task 9:**   [103-fast_alphabet.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x02-python-import_modules/103-fast_alphabet.py)
+
+Write a program that prints the alphabet in uppercase, followed by a new line.
+![9](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/793b475f-66fa-4a07-bbd8-521ffb59b271)
+
+
