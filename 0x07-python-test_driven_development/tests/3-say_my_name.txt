@@ -17,7 +17,7 @@ an empty string is printed.
 ::
 
     >>> say_my_name("Maryanne")
-    My name is Maryanne
+    My name is Maryanne 
 
 Both parameters must be strings. If not a TypeError is raised.
 
