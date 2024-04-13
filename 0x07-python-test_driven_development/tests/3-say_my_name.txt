@@ -4,6 +4,7 @@ Usage
 =====
 
 Prints "My name is <first_name> <last_name>"
+
 ::
 
     >>> say_my_name = __import__('3-say_my_name').say_my_name
@@ -12,12 +13,14 @@ Prints "My name is <first_name> <last_name>"
 
 ```last_name``` is optional and if not provided,
 an empty string is printed.
+
 ::
 
     >>> say_my_name("Maryanne")
     My name is Maryanne
 
 Both parameters must be strings. If not a TypeError is raised.
+
 ::
 
     >>> say_my_name(100, "Maryanne")
@@ -30,7 +33,8 @@ Both parameters must be strings. If not a TypeError is raised.
     Traceback (most recent call last):
     TypeError: last_name must be a string
 
-If both not strings error will detected for first_name
+If both are not strings, error will detected for first_name
+
 ::
 
     >>> say_my_name({"Jane", "John"}, 3.3)
@@ -38,6 +42,7 @@ If both not strings error will detected for first_name
     TypeError: first_name must be a string
 
 If no parameters are put and it's None
+
 ::
 
     >>> say_my_name(None)
@@ -45,6 +50,7 @@ If no parameters are put and it's None
     TypeError: first_name must be a string
 
 One name must be provided at least.
+
 ::
 
     >>> say_my_name()
