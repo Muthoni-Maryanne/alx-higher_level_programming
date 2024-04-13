@@ -1,4 +1,11 @@
-This defines a square-printing function.
+========================
+Module 4-print_square.py
+========================
+
+It defines a square-printing function ``print_square(size)``.
+
+Use
+===
 
 
 Squares are printed using the ``#`` character:
