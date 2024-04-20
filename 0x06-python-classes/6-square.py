@@ -50,12 +50,12 @@ class Square:
             print("")
             return
 
-        if position[1] < 0:
-            for j in range(0, position[0]):
-                print(" " * position[0])
-            for i in range(0, self.__size):
+        elif self.__size > 0:
+            if position[1] < 0:
+                for j in range(0, position[0]):
+                    print(" " * position[0])
+                for i in range(0, self.__size):
                 print("#" * self.__size)
-
-        else:
+            
             for i in range(0, self.__size):
                 print("#" * self.__size)
