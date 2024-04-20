@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 0-square.py
-"""class Square declaration"""
+"""empty class Square that defines a square"""
 
 
 class Square:
