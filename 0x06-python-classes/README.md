@@ -199,3 +199,8 @@ if __name__ == "__main__":
     del y
 ```
 ## Tasks
+
+**Task 0:**    [0-square.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x06-python-classes/0-square.py)
+
+Write an empty class Square that defines a square. You are not allowed to import any module.
+![0](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/c5c6a8b4-5ead-4516-a17d-36a4de47f194)
