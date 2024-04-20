@@ -1,6 +1,6 @@
 # 0x06. Python - Classes and Objects
 
-Continuation of Python that looks at: Classes, methods, class variables, instance variables, methods, __init__, self, encapsulation and its methods: getters and setters, pythonic way of dealing with private attributes which includes @property and @<function_name>.setter, special operators e.g __add__, __sub__ etc.
+Continuation of Python that looks at: Classes, methods, class variables, instance variables, methods, __init__, self, encapsulation and its methods: getters and setters, pythonic way of dealing with private attributes which includes @property and @<function_name>.setter, special operators e.g \_\_add\_\_, \_\_sub\_\_ etc.
 
 ## Resources
 1. [Object Oriented Programming](https://python.swaroopch.com/oop.html)
@@ -201,6 +201,19 @@ if __name__ == "__main__":
 ## Tasks
 
 **Task 0:**    [0-square.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x06-python-classes/0-square.py)
-
-Write an empty class Square that defines a square. You are not allowed to import any module.
 ![0](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/c5c6a8b4-5ead-4516-a17d-36a4de47f194)
+
+
+**Task 1:**    [1-square.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x06-python-classes/1-square.py)
+![1](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/9c030694-c1a2-4712-a06a-e437154216c3)
+
+
+**Task 2:**    [2-square.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x06-python-classes/2-square.py)
+![2](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/b69c65e1-62f6-402b-92fb-1cd66bb26e53)
+
+
+**Task 3:**    [3-square.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x06-python-classes/3-square.py)
+![3](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/41f85105-8a07-4fe1-afe0-1122b5a82c38)
+
+**Task 4:**    [4-square.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x06-python-classes/4-square.py)
+![4](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/37f89cdd-3299-4a6a-ba27-5618057fe621)
