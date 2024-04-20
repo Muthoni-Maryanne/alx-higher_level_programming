@@ -222,3 +222,6 @@ if __name__ == "__main__":
 
 **Task 5:**    [5-square.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x06-python-classes/5-square.py)
 ![5](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/89ff6443-79ed-4b97-991d-2d1e35f7d674)
+
+**Task 6:**     [6-square.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x06-python-classes/6-square.py)
+![6](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/dd4e7481-91d4-434a-81b4-9f7184e7d5b9)
