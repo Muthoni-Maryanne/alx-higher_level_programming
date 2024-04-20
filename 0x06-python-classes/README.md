@@ -119,6 +119,7 @@ droid2.die()
 Robot.how_many()
 ```
 **Encapsulation**
+
 Bundling of data with the methods that operate on that data. 
 
 The methods are getter methods for retrieving data and setter methods for changing the data.
@@ -154,9 +155,10 @@ if __name__ == "__main__":
         print("I was built in the year " + str(rob.get_build_year()) + "!")
 ```
 **Properties**
+
 Unfortunately, it is widespread belief that a proper Python class should encapsulate private attributes by using getters and setters. As soon as one of these programmers introduces a new attribute, he or she will make it a private variable and creates "automatically" a getter and a setter for this attribute. However, the Pythonic way to introduce attributes is to make them public.
 
-The solution to allow changes to public attributes is properties:
+The solution to encapsulation to public attributes is properties:
 ```
 class P:
 
