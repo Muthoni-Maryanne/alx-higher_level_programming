@@ -215,5 +215,10 @@ if __name__ == "__main__":
 **Task 3:**    [3-square.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x06-python-classes/3-square.py)
 ![3](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/41f85105-8a07-4fe1-afe0-1122b5a82c38)
 
+
 **Task 4:**    [4-square.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x06-python-classes/4-square.py)
 ![4](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/37f89cdd-3299-4a6a-ba27-5618057fe621)
+
+
+**Task 5:**    [5-square.py](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/blob/main/0x06-python-classes/5-square.py)
+![5](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/89ff6443-79ed-4b97-991d-2d1e35f7d674)
