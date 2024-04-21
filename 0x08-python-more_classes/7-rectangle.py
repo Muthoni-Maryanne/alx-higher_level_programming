@@ -14,13 +14,13 @@ class Rectangle:
         if not isinstance (self.__width, int):
             raise TypeError("width must be an integer")
         if self.__width < 0:
-            raise ValueEror("width must be >= 0")
+            raise ValueError("width must be >= 0")
         
         self.__height = height
         if not isinstance (self.__height, int):
             raise TypeError("width must be an integer")
         if self.__height < 0:
-            raise ValueEror("width must be >= 0")
+            raise ValueError("width must be >= 0")
 
         Rectangle.number_of_instances += 1
 
