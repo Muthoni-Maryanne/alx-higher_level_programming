@@ -9,7 +9,8 @@ Continuation of Python that looks at: classes, instances/objects, methods, class
 4. [Learn to Program 9 : Object Oriented Programming](https://www.youtube.com/watch?v=1AGyBuVCTeE)
 5. [Python Classes and Objects || Python Tutorial || Learn Python Programming](https://www.youtube.com/watch?v=apACNr7DC_s)
 6. [Object Oriented Programming](https://www.youtube.com/watch?v=-DP1i2ZU9gk)
-
+7. [Example Google Style Python Docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
+   
 ## Summary
 Everything in Python is an object and has a type. An object is a data abstraction that captures:
 
