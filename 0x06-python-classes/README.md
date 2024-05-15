@@ -1,6 +1,6 @@
 # 0x06. Python - Classes and Objects
 
-Continuation of Python that looks at: Classes, methods, class variables, instance variables, methods, __init__, self, encapsulation and its methods: getters and setters, pythonic way of dealing with private attributes which includes @property and @<function_name>.setter, special operators e.g \_\_add\_\_, \_\_sub\_\_ etc.
+Continuation of Python that looks at: classes, instances/objects, methods, class variables, instance variables, \_\_init__, self, encapsulation and its methods: getters and setters, pythonic way of dealing with private attributes which include @property and @<function_name>.setter, special operators e.g \_\_add\_\_, \_\_sub\_\_ etc.
 
 ## Resources
 1. [Object Oriented Programming](https://python.swaroopch.com/oop.html)
@@ -11,7 +11,13 @@ Continuation of Python that looks at: Classes, methods, class variables, instanc
 6. [Object Oriented Programming](https://www.youtube.com/watch?v=-DP1i2ZU9gk)
 
 ## Summary
-We create a new class by:
+Everything in Python is an object and has a type. An object is a data abstraction that captures:
+
+-. Internal representation through data attributes.
+
+-. An interface for interacting with the object through methods/functions.
+
+To create types and objects create a class first. The class is the template for the object. We create a new class by:
 
 a. Using the class statement and the name of the class. 
 
@@ -25,7 +31,7 @@ print(p)
 ```
 **Methods**
 
-Objects can have functionality using functions belonging to classes- methods. Methods are like normal functions but take self/the object itself as the first argument.
+Objects can have functionality using functions belonging to classes- methods. Methods are similar to normal functions but take self/the object itself as the first argument.
 ```
 class Person:
     def say_hi(self):
@@ -156,7 +162,7 @@ if __name__ == "__main__":
 ```
 **Properties**
 
-Unfortunately, it is widespread belief that a proper Python class should encapsulate private attributes by using getters and setters. As soon as one of these programmers introduces a new attribute, he or she will make it a private variable and creates "automatically" a getter and a setter for this attribute. However, the Pythonic way to introduce attributes is to make them public.
+Unfortunately, it is a widespread belief that a proper Python class should encapsulate private attributes using getters and setters. As soon as one of these programmers introduces a new attribute, he or she will make it a private variable and creates "automatically" a getter and a setter for this attribute. However, the Pythonic way to introduce attributes is to make them public.
 
 The solution to encapsulation to public attributes is properties:
 ```
