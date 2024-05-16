@@ -2,10 +2,6 @@
 """Defines class Square"""
 
 
-#!/usr/bin/python3
-"""Defines class Square"""
-
-
 class Square:
     """class Square with one instance attribute and __init__ method"""
 
