@@ -14,12 +14,13 @@ This section covers Python programming.
 
 ## Projects
 
-| Project       | Description   |
-| ------------------------------------------------------------------------------------------------------------------------- | ------------- |
-|               |               |
-|               |               |
-|               |               |
-|               |               |
-|               |               |
-| [0x06-python-classes](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/tree/main/0x06-python-classes)  | Concepts: classes, instances/objects, methods, class variables, instance variables, \_\_init__, self, encapsulation and its methods: getters and setters, pythonic way of dealing with private attributes which include @property and @<function_name>.setter, special operators e.g \_\_add__, \_\_sub__ etc.  |
+| No.  |Project       | Description    |
+|------|--------------| ---------------|
+|0.    | [0x00-python-hello_world](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/tree/main/0x00-python-hello_world) | This is the beginning of Python. Concepts covered include: the python interpreter, numbers, strings, indexing, slicing and string interpolation using %, .format and fstrings.|
+|1.    |               |               |
+|2.    |               |               |
+|3.    |               |               |
+|4.    |               |               |
+|5.    |               |               |
+|6.    |[0x06-python-classes](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/tree/main/0x06-python-classes)  | Concepts: classes, instances/objects, methods, class variables, instance variables, \_\_init__, self, encapsulation and its methods: getters and setters, pythonic way of dealing with private attributes which include @property and @<function_name>.setter, special operators e.g \_\_add__, \_\_sub__ etc.  |
 
