@@ -74,6 +74,7 @@ After this can run ```mysql_secure_installation``` without issue. After can then
 ```mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;```
 
 **DDL and DML**
+
 SQL statements are divided into two major categories: data definition language (DDL) and data manipulation language (DML). 
 
 
