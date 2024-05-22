@@ -3,16 +3,20 @@
 This is an introduction to relational data bases.
 
 # Resources
-1. [How to Install MySQL on Ubuntu 20.04](https://phoenixnap.com/kb/install-mysql-ubuntu-20-04)
+1. [What is Database & SQL?](https://www.youtube.com/watch?v=FR4QIeZaPeM)
 2. [A Basic MySQL Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
-3. []()
-4. []()
-5. []()
-6. []()
+3. [Basic SQL statements: DDL and DML](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/ddldml.php)
+4. 
+5. [How to Install MySQL on Ubuntu 20.04](https://phoenixnap.com/kb/install-mysql-ubuntu-20-04)
+6. 
 7. []()
 8. []()
 9. []()
 10. []()
+11. []()
+12. []()
+13. []()
+14. []()
 
 # Summary
 **Installation on Ubuntu 20.04**
@@ -69,4 +73,29 @@ After this can run ```mysql_secure_installation``` without issue. After can then
 
 ```mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;```
 
+**DDL and DML**
+SQL statements are divided into two major categories: data definition language (DDL) and data manipulation language (DML). 
+
+
+DDL statements are used to build and modify the structure of your tables and other objects in the database. When you execute a DDL statement, it takes effect immediately. Example of create table:
+```
+CREATE TABLE <table name> ( 
+        <attribute name 1> <data type 1>,
+        ...
+        <attribute name n> <data type n>);
+```
+DML statements are used to work with the data in tables e.g., SELECT, UPDATE, INSERT, DELETE
+```
+INSERT INTO <table name>
+        VALUES (<value 1>, ... <value n>);
+```
+```
+UPDATE <table name>
+        SET <attribute> = <expression>
+        WHERE <condition>;
+```
+```
+DELETE FROM <table name>
+        WHERE <condition>;
+```
 # Tasks
