@@ -29,7 +29,8 @@ This is an introduction to relational data bases.
 5. Log in to MySQL Server.
 - Use ```sudo mysql -u root``` if password authenticated or ```sudo mysql``` if set to authenticate using the auth_socket plugin.
 6. Creating a Dedicated MySQL User and granting Privileges if not working in root user account.
-
+7. Flush privileges to free up memory and exit.
+8. To log in in future ```mysql -u sammy -p```
 ```
 $ sudo apt update
 ...
@@ -46,6 +47,11 @@ $ sudo mysql -u root
 mysql> CREATE USER 'username'@'host' IDENTIFIED WITH authentication_plugin BY 'password';
 ...
 mysql> GRANT PRIVILEGE ON database.table TO 'username'@'host';
+...
+mysql> FLUSH PRIVILEGES;
+...
+mysql> exit
+...
 ```
 Note: As of July 2022, an error will occur when you run the mysql_secure_installation script without some further configuration leading to a recursive loop.
 
