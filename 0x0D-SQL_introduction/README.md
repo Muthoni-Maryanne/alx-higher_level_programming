@@ -19,7 +19,7 @@ This is an introduction to relational data bases.
    
 
 
-# Summary
+## Summary
 **Installation on Ubuntu 20.04**
 
 1. Update Ubuntu packages 
@@ -146,4 +146,4 @@ SELECT prodname AS "product name",
         GROUP BY prodname
         HAVING COUNT(prodname) > 1;
 ```
-# Tasks
+## Tasks
