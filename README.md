@@ -25,7 +25,7 @@ This section covers Python programming.
 |6.    |[0x06-python-classes](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/tree/main/0x06-python-classes)  | Concepts: classes, instances/objects, methods, class variables, instance variables, \_\_init__, self, encapsulation and its methods: getters and setters, pythonic way of dealing with private attributes which include @property and @<function_name>.setter, special operators e.g \_\_add__, \_\_sub__ etc.  |
 
 # SQL
-Requirements
+## Requirements
 
 - Allowed editors: vi, vim, emacs
 - All your files will be executed on Ubuntu 20.04 LTS using MySQL 8.0 (version 8.0.25)
@@ -36,7 +36,7 @@ Requirements
 - A README.md file, at the root of the folder of the project, is mandatory
 - The length of your files will be tested using wc
 
-**Installation on Ubuntu 20.04**
+## Installation on Ubuntu 20.04
 
 1. Update Ubuntu packages 
 2. Install MySQL
@@ -94,4 +94,4 @@ After this can run ```mysql_secure_installation``` without issue. After can then
 
 | No.  |Project       | Description    |
 |------|--------------| ---------------|
-|0.    | [0x00-python-hello_world](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/tree/main/0x00-python-hello_world) | This is the beginning of Python. Concepts covered include: the python interpreter, numbers, strings, indexing, slicing and string interpolation using %, .format and fstrings.|
+|0.    | [0x0D-SQL_introduction](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/tree/main/0x0D-SQL_introduction) | This is the beginning of SQL. Concepts covered include installation, relational database, non-relational database, SQL, DDL, DML, Functions, Relation Algebra and subqueries.|
