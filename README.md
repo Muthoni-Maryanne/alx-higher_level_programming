@@ -24,3 +24,20 @@ This section covers Python programming.
 |5.    |               |               |
 |6.    |[0x06-python-classes](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/tree/main/0x06-python-classes)  | Concepts: classes, instances/objects, methods, class variables, instance variables, \_\_init__, self, encapsulation and its methods: getters and setters, pythonic way of dealing with private attributes which include @property and @<function_name>.setter, special operators e.g \_\_add__, \_\_sub__ etc.  |
 
+# SQL
+Requirements
+
+- Allowed editors: vi, vim, emacs
+- All your files will be executed on Ubuntu 20.04 LTS using MySQL 8.0 (version 8.0.25)
+- All your files should end with a new line
+- All your SQL queries should have a comment just before (i.e. syntax above)
+- All your files should start by a comment describing the task
+- All SQL keywords should be in uppercase (SELECT, WHERE…)
+- A README.md file, at the root of the folder of the project, is mandatory
+- The length of your files will be tested using wc
+
+## Projects
+
+| No.  |Project       | Description    |
+|------|--------------| ---------------|
+|0.    | [0x00-python-hello_world](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/tree/main/0x00-python-hello_world) | This is the beginning of Python. Concepts covered include: the python interpreter, numbers, strings, indexing, slicing and string interpolation using %, .format and fstrings.|
