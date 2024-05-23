@@ -1,11 +1,11 @@
 # 0x0D. SQL - Introduction
 
-This is an introduction to relational data bases.
+This is an introduction to relational databases and SQL.
 
 ## Concepts
 1. [Databases](https://intranet.alxswe.com/concepts/37)
 2. [The big NoSQL databases comparison](http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis)
-# Resources
+## Resources
 1. [What is Database & SQL?](https://www.youtube.com/watch?v=FR4QIeZaPeM)
 2. [A Basic MySQL Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
 3. [Basic SQL statements: DDL and DML](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/ddldml.php)
