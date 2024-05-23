@@ -105,4 +105,43 @@ SELECT {attribute}+
   [ WHERE {boolean predicate to pick rows} ]
   [ ORDER BY {attribute}+ ];
 ```
+Retrieval with relational algebra:
+-  select (RA) operator specified by the symbol σ: similar to WHERE in SQL. Example: ```σcZipCode='90840'customers```
+-  project (RA) operator specified by the symbol π: similar to SELECT in SQL. Example: ```πcLastName, cFirstName, cPhone customers```
+-  Combination of both in a function composition to get listed attributes where ZipCode='90840': ```πcLastName, cFirstName, cPhone σcZipCode='90840'customers```
+
+**SQL technique: functions**
+
+Computed columns: Can compute values from information that is in a table simply by showing the computation in the SELECT clause. 
+
+Each computation creates a new column in the output table, just as if it were a named attribute. Example: 
+```
+SELECT custID, orderDate, UPC, 
+          unitSalePrice * quantity AS subtotal
+        FROM orderlines;
+```
+
+Aggregate functions:  Let us compute values based on multiple rows in our tables. They are also used as part of the SELECT clause, and also create new columns in the output.
+
+Example where we compute the total for each order then add up order lines but group the totals for each order using the GROUP BY clause:
+```
+SELECT custID, orderDate, SUM(unitSalePrice * quantity) AS total
+        FROM orderlines
+        GROUP BY custID, orderDate;
+```
+Other functions :MIN, MAX, AVG, COUNT(slightly works different, counts number of rows) etc.
+```
+SELECT COUNT(*)
+        FROM orders;
+```
+Count groups of rows with identical values in a column:
+```
+SELECT prodname AS "product name", 
+           COUNT(prodname) AS "times ordered"
+        FROM products NATURAL JOIN orderlines
+        GROUP BY prodname
+        HAVING COUNT(prodname) > 1;
+```
+```
+
 # Tasks
