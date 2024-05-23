@@ -2,7 +2,7 @@
 
 This is an introduction to relational data bases.
 
-# Concepts
+## Concepts
 1. [Databases](https://intranet.alxswe.com/concepts/37)
 2. [The big NoSQL databases comparison](http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis)
 # Resources
@@ -18,13 +18,14 @@ This is an introduction to relational data bases.
 10. [How to Install MySQL on Ubuntu 20.04](https://phoenixnap.com/kb/install-mysql-ubuntu-20-04)
 
 ## Summary
+**Comments for your SQL file:**
+```
 $ cat my_script.sql
 -- 3 first students in the Batch ID=3
 -- because Batch 3 is the best!
 SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
 $
-
-
+```
 **DDL and DML**
 
 SQL statements are divided into two major categories: data definition language (DDL) and data manipulation language (DML). 
