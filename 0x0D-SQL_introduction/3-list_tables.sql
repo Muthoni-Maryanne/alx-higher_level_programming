@@ -1,3 +1,4 @@
--- List all tables on a database
--- execute: cat 3-list_tables.sql | mysql -hlocalhost -uroot -p mysql
+-- lists all the tables of a database in your MySQL server
+-- database name will be passed as argument of mysql command
+USE mysql;
 SHOW TABLES;
