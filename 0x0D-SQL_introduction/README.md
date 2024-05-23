@@ -146,6 +146,4 @@ SELECT prodname AS "product name",
         GROUP BY prodname
         HAVING COUNT(prodname) > 1;
 ```
-```
-
 # Tasks
