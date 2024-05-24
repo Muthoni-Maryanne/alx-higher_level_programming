@@ -5,7 +5,7 @@ This is a continuation of SQL.
 2. [How To Use MySQL GRANT Statement To Grant Privileges To a User](https://www.mysqltutorial.org/mysql-administration/mysql-grant/)
 3. [MySQL constraints](https://zetcode.com/mysql/constraints/)
 4. [SQL technique: subqueries](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/subqueries.php)
-5. []()
+5. [Basic query operation: the join](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/join.php)
 6. 
 ## Summary
 **Create a New User and Grant Permissions in MySQL**
