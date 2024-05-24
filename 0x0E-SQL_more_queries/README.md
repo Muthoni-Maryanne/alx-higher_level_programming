@@ -3,7 +3,9 @@ This is a continuation of SQL.
 ## Resources
 1. [How To Create a New User and Grant Permissions in MySQL](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql)
 2. [How To Use MySQL GRANT Statement To Grant Privileges To a User](https://www.mysqltutorial.org/mysql-administration/mysql-grant/)
-3. []()
+3. [MySQL constraints](https://zetcode.com/mysql/constraints/)
+4. []()
+5. 
 ## Summary
 **Create a New User and Grant Permissions in MySQL**
 1. Log into MySQL server: ```$ sudo mysql``` if using auth_socket or ```$ sudo -u root -p``` if using password
@@ -21,3 +23,38 @@ Note:
 - Review a user’s current permissions: ```SHOW GRANTS FOR 'username'@'host';```
 - Delete a user: ```DROP USER 'username'@'localhost';```
 
+**MySQL GRANT**
+
+![Screenshot 2024-05-24 161142](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/5bc82f74-551a-461e-8944-d437ae686022)
+
+**MySQL constraints**
+
+NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, ENUM, SET
+
+Example(foreign key constraint):
+```
+mysql> CREATE TABLE Authors(AuthorId INTEGER PRIMARY KEY, Name VARCHAR(70))
+    -> type=InnoDB;
+...
+mysql> CREATE TABLE Books(BookId INTEGER PRIMARY KEY, Title VARCHAR(50),
+    -> AuthorId INTEGER, FOREIGN KEY(AuthorId) REFERENCES Authors(AuthorId))
+    -> type=InnoDB;
+...
+```
+Example(set constraint):
+```
+mysql> CREATE TABLE Students(Id INTEGER, Name VARCHAR(55), 
+    -> Certificates SET('A1', 'A2', 'B1', 'C1')); 
+...
+mysql> INSERT INTO Students VALUES(1, 'Paul', 'A1,B1');
+mysql> INSERT INTO Students VALUES(2, 'Jane', 'A1,B1,A2');
+mysql> INSERT INTO Students VALUES(3, 'Mark', 'A1,A2,D1,D2');
+mysql> SELECT * FROM Students;
++------+------+--------------+
+| Id   | Name | Certificates |
++------+------+--------------+
+|    1 | Paul | A1,B1        |
+|    2 | Jane | A1,A2,B1     |
+|    3 | Mark | A1,A2        |
++------+------+--------------+
+```
