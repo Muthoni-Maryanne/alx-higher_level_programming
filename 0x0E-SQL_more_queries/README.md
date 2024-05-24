@@ -4,8 +4,9 @@ This is a continuation of SQL.
 1. [How To Create a New User and Grant Permissions in MySQL](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql)
 2. [How To Use MySQL GRANT Statement To Grant Privileges To a User](https://www.mysqltutorial.org/mysql-administration/mysql-grant/)
 3. [MySQL constraints](https://zetcode.com/mysql/constraints/)
-4. []()
-5. 
+4. [SQL technique: subqueries](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/subqueries.php)
+5. []()
+6. 
 ## Summary
 **Create a New User and Grant Permissions in MySQL**
 1. Log into MySQL server: ```$ sudo mysql``` if using auth_socket or ```$ sudo -u root -p``` if using password
