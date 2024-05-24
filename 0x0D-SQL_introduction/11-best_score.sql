@@ -1,3 +1,5 @@
--- List the score greather than or equal to 10
--- Execute: cat 11-best_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+-- script that lists all records with a score >= 10 in the table second_table of the database hbtn_0c_0
+-- Results should display both the score and the name (in this order)
+-- Records should be ordered by score (top first)
+-- Execute with cat 11-best_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 SELECT score, name FROM second_table WHERE score >= 10 ORDER BY score DESC;
