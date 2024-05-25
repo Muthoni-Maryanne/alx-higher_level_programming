@@ -6,7 +6,7 @@ This is a continuation of SQL.
 3. [MySQL constraints](https://zetcode.com/mysql/constraints/)
 4. [SQL technique: subqueries](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/subqueries.php)
 5. [Basic query operation: the join](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/join.php)
-6. 
+6. [SQL technique: multiple joins and the distinct keyword](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/multijoin.php)
 ## Summary
 **Create a New User and Grant Permissions in MySQL**
 1. Log into MySQL server: ```$ sudo mysql``` if using auth_socket or ```$ sudo -u root -p``` if using password
