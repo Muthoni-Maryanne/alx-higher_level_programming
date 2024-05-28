@@ -1,2 +1,9 @@
--- Prints the full description of the table first_table.
-SHOW CREATE TABLE `first_table`;
+-- script that creates the table unique_id on your MySQL server.
+-- unique_id description:
+-- id INT with the default value 1 and must be unique, name VARCHAR(256)
+-- If the table unique_id already exists, your script should not fail
+-- Execute with cat 5-unique_id.sql | mysql -hlocalhost -uroot -p hbtn_0d_2
+CREATE TABLE
+	IF NOT EXISTS unique_id(
+		id INT DEFAULT 1 UNIQUE,
+		name VARCHAR(256));
