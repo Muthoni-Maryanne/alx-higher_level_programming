@@ -95,3 +95,7 @@ After this can run ```mysql_secure_installation``` without issue. After can then
 | No.  |Project       | Description    |
 |------|--------------| ---------------|
 |0.    | [0x0D-SQL_introduction](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/tree/main/0x0D-SQL_introduction) | This is the beginning of SQL. Concepts covered include installation, relational database, non-relational database, SQL, DDL, DML, Functions, Relation Algebra and subqueries.|
+|1.    | [0x0E-SQL_more_queries](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/tree/main/0x0E-SQL_more_queries) | This is a continuation of SQL that looks at creating users in MySql, privileges, constraints, joins, union and minus. |
+
+
+# HTML and CSS
