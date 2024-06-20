@@ -1,2 +1,19 @@
--- Inserts a new row into the table first_table.
-INSERT INTO `first_table` (`id`, `name`) VALUES (89, "Holberton School");
+-- script that creates the database hbtn_0d_usa
+-- and the table cities (in the database hbtn_0d_usa)
+-- cities description:
+-- id INT unique, auto generated, can’t be null and is a primary key
+-- state_id INT, can’t be null and must be a FOREIGN KEY that references to id of the states table
+-- name VARCHAR(256) can’t be null
+-- If the database hbtn_0d_usa already exists, your script should not fail
+-- If the table cities already exists, your script should not fail
+-- Execute with cat 7-cities.sql | mysql -hlocalhost -uroot -p
+CREATE DATABASE
+	IF NOT EXISTS hbtn_0d_usa;
+USE hbtn_0d_usa;
+CREATE TABLE
+	IF NOT EXISTS cities(
+		id INT PRIMARY KEY AUTO_INCREMENT,
+		state_id INT NOT NULL FOREIGN KEY(state_id)
+		REFERENCES states(id),
+		name VARCHAR(256) NOT NULL)
+		type = InnoDB;
