@@ -36,3 +36,4 @@ session.close()
 ## Summary
 ![extra 1](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/27d13c18-b77b-467d-9b68-561abcee1ce1)
 
+![extra 2](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/47fe7c5d-994b-4e5b-bc11-694039eafb8b)
