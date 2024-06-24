@@ -32,7 +32,8 @@ session.close()
 ## Resources
 1. [Object-relational mappers](https://www.fullstackpython.com/object-relational-mappers-orms.html)
 2. [mysqlclient/MySQLdb documentation (please don’t pay attention to _mysql)](https://mysqlclient.readthedocs.io/)
-3. 
+3. [MySQLdb tutorial](https://www.mikusa.com/python-mysql-docs/index.html)
+4. 
 ## Summary
 ![extra 1](https://github.com/Muthoni-Maryanne/alx-higher_level_programming/assets/107298263/27d13c18-b77b-467d-9b68-561abcee1ce1)
 
