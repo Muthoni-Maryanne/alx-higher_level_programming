@@ -13,5 +13,5 @@ for i in range(100):
     end = ', '
     if i == 99:
         end = ''
-    print("{:02d}".format(i),end=end)
+    print("{:02d}".format(i), end=end)
 print()
