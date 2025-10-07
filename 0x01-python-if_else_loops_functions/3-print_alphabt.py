@@ -12,6 +12,5 @@ while i <= 122:
     if i == 113 or i == 101:
         i += 1
         continue
-  
     print("{:c}".format(i), end="")
     i += 1
